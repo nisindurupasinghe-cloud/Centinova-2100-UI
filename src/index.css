@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-dark: #040711;
+    --card-bg: rgba(13, 20, 38, 0.65);
+    --card-border: rgba(0, 243, 255, 0.2);
+    --accent-cyan: #00f3ff;
+    --accent-magenta: #ff007f;
+    --accent-purple: #9d4edd;
+    --accent-emerald: #00ff88;
+    --font-heading: 'Outfit', sans-serif;
+  }
+
+  /* Accessibility High-Contrast Overrides */
+  body.high-contrast {
+    --bg-dark: #000000;
+    --card-bg: #111111;
+    --card-border: #ffffff;
+    --accent-cyan: #00ffff;
+    --accent-magenta: #ff00ff;
+    --accent-emerald: #00ff00;
+  }
+
+  body {
+    background-color: var(--bg-dark);
+    color: #e2e8f0;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    touch-action: manipulation;
+  }
+}
+
+/* Glassmorphism & Cyber Overlays */
+.glass-panel {
+  background: var(--card-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 243, 255, 0.05);
+}
+
+.glass-panel-active {
+  background: rgba(18, 30, 58, 0.85);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 243, 255, 0.6);
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.3), inset 0 0 20px rgba(0, 243, 255, 0.15);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.neon-glow-cyan {
+  text-shadow: 0 0 10px rgba(0, 243, 255, 0.7), 0 0 20px rgba(0, 243, 255, 0.4);
+}
+
+.neon-glow-magenta {
+  text-shadow: 0 0 10px rgba(255, 0, 127, 0.7), 0 0 20px rgba(255, 0, 127, 0.4);
+}
+
+.neon-glow-emerald {
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.7), 0 0 20px rgba(0, 255, 136, 0.4);
+}
+
+.neon-border-cyan {
+  box-shadow: 0 0 15px rgba(0, 243, 255, 0.4), inset 0 0 10px rgba(0, 243, 255, 0.2);
+}
+
+.neon-border-magenta {
+  box-shadow: 0 0 15px rgba(255, 0, 127, 0.4), inset 0 0 10px rgba(255, 0, 127, 0.2);
+}
+
+/* Cyber Grid Background */
+.cyber-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 243, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 243, 255, 0.05) 1px, transparent 1px);
+}
+
+.cyber-grid-dense {
+  background-size: 20px 20px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 243, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 243, 255, 0.08) 1px, transparent 1px);
+}
+
+/* Scanning Line Animation */
+.scanline {
+  position: relative;
+  overflow: hidden;
+}
+.scanline::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 20;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(4, 7, 17, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 243, 255, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 243, 255, 0.7);
+}
+
+/* Enhanced Animations */
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; transform: scale(1); filter: drop-shadow(0 0 10px rgba(0, 243, 255, 0.4)); }
+  50% { opacity: 1; transform: scale(1.05); filter: drop-shadow(0 0 25px rgba(0, 243, 255, 0.8)); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+@keyframes shimmer-sweep {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s infinite ease-in-out;
+}
+
+.animate-float-slow {
+  animation: float-slow 4s infinite ease-in-out;
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg, #00f3ff, #ffffff, #ff007f, #00f3ff);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shimmer-sweep 4s linear infinite;
+}
