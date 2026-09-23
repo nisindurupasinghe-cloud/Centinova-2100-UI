@@ -30,3 +30,7 @@ To run this project locally:
 1. Clone the repository: `git clone https://github.com/nisindurupasinghe-cloud/Centinova-2100-UI`
 2. Install dependencies: `npm install` 
 3. Start the development server: `npm run dev`
+
+## 📸 Application Screenshots
+<img width="1917" height="895" alt="Screenshot 2026-09-23 165623" src="https://github.com/user-attachments/assets/e0ce1e00-159c-45a3-8cd3-9c0ad6112771" />
+
