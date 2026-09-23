@@ -33,4 +33,12 @@ To run this project locally:
 
 ## 📸 Application Screenshots
 <img width="1917" height="895" alt="Screenshot 2026-09-23 165623" src="https://github.com/user-attachments/assets/e0ce1e00-159c-45a3-8cd3-9c0ad6112771" />
+<img width="1912" height="462" alt="Screenshot 2026-09-23 165659" src="https://github.com/user-attachments/assets/5d5dcad3-ae05-4aed-8c49-c73f40411b9e" />
+<img width="1901" height="787" alt="Screenshot 2026-09-23 165722" src="https://github.com/user-attachments/assets/14c38b2c-5e55-4b23-977f-ff738c23eba4" />
+<img width="1917" height="858" alt="Screenshot 2026-09-23 165752" src="https://github.com/user-attachments/assets/885314ea-72a7-4043-956a-7a9237a11091" />
+<img width="1917" height="924" alt="Screenshot 2026-09-23 165811" src="https://github.com/user-attachments/assets/1c3527e0-ceeb-4b4a-9f52-36a75076584b" />
+
+
+
+
 
