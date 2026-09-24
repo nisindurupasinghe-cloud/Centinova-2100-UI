@@ -23,7 +23,7 @@ This application is strictly mobile-responsive, ensuring no layout breakage or t
 ## 🌟 Design Philosophy
 * **Meaningful Inclusion (Accessibility):** Designed to be intuitive for everyone, regardless of age, ability, or tech fluency[cite: 1]. Features include simplified navigation paths, large touch targets, plain-language microcopy, and high-contrast visuals.
 * **Innovation:** Integrates conceptual AI-driven features such as predictive routing, personalized accessibility settings, and smart rebooking.
-* **Aesthetics:** Employs a cohesive "2100" visual style utilizing immersive 3D elements and consistent typography.
+* **Aesthetics:** Employs a cohesive "2100" visual style utilizing immersive 3D elements and consistent typography.  
 
 ## 💻 Local Installation
 To run this project locally:
