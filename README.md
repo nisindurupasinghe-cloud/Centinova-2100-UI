@@ -6,7 +6,7 @@
 * **Live Hosted Link:** https://centinova-2100-ui.vercel.app/
 
 ## 🚀 Concept Overview
-This project is a futuristic digital platform designed for the year 2100, enabling users to effortlessly plan and manage journeys across an advanced smart-city network. The platform seamlessly integrates multiple modes of transit—including autonomous buses, autonomous trains, air transport, and smart roads—into a single, unified experience. 
+This project is a futuristic digital platform designed for the year 2100, enabling users to effortlessly plan and manage journeys across an advanced smart-city network. The platform seamlessly integrates multiple modes of transit including autonomous buses, autonomous trains, air transport, and smart roads—into a single, unified experience. 
 
 ## 🛠️ Tech Stack
 * **Frontend:** React, React Three Fiber (R3F), Drei
